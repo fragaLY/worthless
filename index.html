@@ -37,21 +37,29 @@
             display: block;
         }
 
-        body {
+        html, body {
+            height: 100%;
             background-image: url(images/carpet.jpg);
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            height: auto;
+        .bg {
+            /* The image used */
+            background-image: url(images/carpet.jpg);
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
-<body>
+<body class="bg">
 <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/AWKzr6n0ea0?autoplay=1" frameborder="1"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<footer class="page-footer font-small blue fixed-bottom">
+<footer class="page-footer font-small blue fixed-bottom text-dark bg-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12 mb-1">
